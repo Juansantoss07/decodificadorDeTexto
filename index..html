@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <main>
+        <div class="container-left">
+            <header>
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Alura logo">
+                </div>
+            </header>
+            <div class="input-text">
+                <textarea id="texto" name="texto" rows="10" cols="auto" placeholder="Insira o seu texto aqui..."></textarea>
+            </div>
+
+            <div class="container-bottom">
+                <div class="info">
+                    <img src="/assets/img/info.png" alt="info">
+                    <span>Apenas letras minúsculas e sem acento</span>
+                </div>
+                <div class="buttons">
+                    <button class="btn-blue" onclick="processarTexto('criptografar')">Criptografar</button>
+                    <button class="btn-gray" onclick="processarTexto('descriptografar')">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-right">
+            <div class="container-center">
+                <div class="cartoon-right">
+                    <img src="/assets/img/cartoon.png" alt="Imagem nenhuma imagem encontrada">
+                </div>
+                <div class="text-no-text">
+                    <p>Nenhuma mensagem encontrada</p>
+                    <span>Digite um texto que você deseja criptografar ou descriptografar</span>
+                </div>
+            </div>
+            <div class="container-text-on">
+                <p></p>
+                <button class="btn-copy">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="/assets/js/textoManiupulador.js"></script>
+</body>
+</html>
